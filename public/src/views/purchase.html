@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Car Purchase</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../jquery/jquery-3.3.1.min.js"></script>
+    <script src="../../jquery/popper.min.js"></script> -->
+    <script src="../../fontawswome/all.min.js"></script>
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <!-- Material Design for Bootstrap fonts and icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+
+    <!-- Material Design for Bootstrap CSS -->
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+</head>
+
+<body class="purchaseBody">
+
+    <!-- Navbar goes here -->
+    <section id="navbarSection"></section>
+    <!-- Navbar ends -->
+
+
+    <section id="leaseSection" class="m-auto">
+        <div class="container-fluid bg-white p-5">
+            <div class="row">
+                <form action="" method="post" class="form-group"></form>
+                <div class="col-md-6 col-lg-6">
+                    <fieldset class="userFieldset">
+                        <legend class="text-capitalize text-center text-success">Customer info</legend>
+                        <label class="text-capitalize ml-2" for="firstname">first name</label><br>
+                        <input type="text" name="firstname" class="form-control pl-5" id="firstname"><br>
+
+                        <label class="text-capitalize ml-2" for="lastname">last name</label><br>
+                        <input type="text" name="lastname" class="form-control pl-5" id="lastname"><br>
+
+                        <label class="text-capitalize ml-2" for="email">email</label><br>
+                        <input type="email" name="email" class="form-control pl-5" id="email"><br>
+
+                        <label class="text-capitalize ml-2" for="address">address</label><br>
+                        <input type="text" name="address" class="form-control pl-5 text-capitalize" id="address"><br>
+
+                        <label class="text-capitalize ml-2" for="phone">phone</label><br>
+                        <input type="number" name="phone" class="form-control pl-5" id="phone"><br>
+                    </fieldset>
+                    <button data-toggle="popover" data-trigger="hover" title="Add Fields"
+                        data-content="This feature enables you add fields such as comments or suggestions fields"
+                        class="btn btn-outline-primary text-capitalize MoreFields">want more fields?</button>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <fieldset>
+                        <legend class="text-capitalize text-center text-success">car details</legend>
+                        <label class="text-capitalize ml-2" for="name">name</label><br>
+                        <input readonly type="text" name="name" class="form-control pl-5" id="name"><br>
+
+                        <label class="text-capitalize ml-2" for="price">price</label><br>
+                        <input readonly type="text" name="price" class="form-control pl-5" id="price"><br>
+
+                        <label class="text-capitalize ml-2" for="model">model</label><br>
+                        <input readonly type="text" name="model" class="form-control pl-5" id="model"><br>
+
+
+                        <label class="text-capitalize ml-2" for="companyMark">company Mark</label><br>
+                        <input readonly type="text" name="companyMark" class="form-control pl-5" id="companyMark"><br>
+
+                        <input type="submit" data-toggle="collapse" data-target="#showMore" value="show more"
+                            class="text-capitalize btn btn-lg mt-4 text-center ml-5"><br><br>
+
+
+                        <div class="container collapse" id="showMore">
+                            <label class="text-capitalize ml-2" for="duration">duration</label><br>
+                            <input readonly type="text" name="duration" class="form-control pl-5 text-capitalize"
+                                id="duration"><br>
+
+                            <label class="text-capitalize ml-2" for="weight">weight</label><br>
+                            <input readonly type="text" name="weight" class="form-control pl-5 text-capitalize"
+                                id="weight"><br>
+
+                            <label class="text-capitalize ml-2" for="ssn">Number</label><br>
+                            <input readonly type="text" name="ssn" class="form-control pl-5" id="ssn"><br>
+
+                            <label class="text-capitalize ml-2" for="waranty">waranty</label><br>
+                            <input readonly type="text" name="waranty" class="form-control pl-5 text-capitalize"
+                                id="waranty"><br>
+                        </div>
+                    </fieldset>
+                </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="paymentSection" class="bg-white p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-6">
+                    <div class="container">
+                        <img src="../../images/mtn_API.png" class="img-fluid" id="mtn_momo" alt="Mtn Mobile Money">
+                        <p class="text-muted">Pay via MTN Momo</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+                    <div class="container">
+                        <img src="../../images/mtn-orange_API.jpg" id="mtnOrange" alt="Mtn Mobile Money">
+                        <p class="text-muted">Pay via Orange Momo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="footerSection" class="bg-secondary mt-5 text-warning mb-0"></section>
+
+
+    <!-- jQuery library -->
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script> <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+    <script src="../commons/navbar.js"></script>
+    <script src="../scripts/purchase.js"></script>
+    <script src="../commons/session.js"></script>
+</body>
+
+</html>

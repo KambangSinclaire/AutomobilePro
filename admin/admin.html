@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./fontawswome/all.min.js"></script>
+    <title>Chief Admin</title>
+</head>
+
+<body>
+
+    <header id="admin" class="bg-info text-center m-auto text-uppercase">
+        Admin Panel
+    </header>
+
+    <!-- Search section -->
+    <section id="searchSection">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <form class="form-group">
+                        <input type="search" class="form-control p-4 input-lg" placeholder="Search" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Search section -->
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="">
+        <div class="container-fluid">
+            <div class="row no-gutters">
+
+
+                <div class="col-sm-8">
+                    <!-- Card -->
+                    <div class="card">
+                        <!-- card Title -->
+                        <div class="card-title">
+                            <header class="text-center bg-primary py-2 text-capitalize heads">
+                                categories
+                            </header>
+                        </div>
+                        <!-- End of card Title -->
+                        <!-- Card body -->
+                        <div class="card-body">
+                            <div class="container-fluid">
+                                <div class="row no-gutters">
+                                    <div class="col-sm-4">
+                                        <div class="container Names">
+                                            <h1 class="text-uppercase px-3">s/n</h1>
+                                        </div>
+                                        <div class="card-text px-2 Names">
+                                            <ul id="Sn" class="list-group">
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="container Names">
+                                            <h1 class="px-3 text-capitalize">name</h1>
+                                        </div>
+                                        <div class="card-text px-2 Names">
+                                            <ul id="ProductName" class="list-group">
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Card body -->
+                    </div>
+                    <!-- End of card -->
+                </div>
+
+
+
+
+                <div class="col-sm-4">
+                    <!-- Card -->
+                    <div class="card">
+                        <!-- card Title -->
+                        <div class="card-title">
+                            <header class="text-center bg-primary py-2 text-capitalize heads">
+                                Options
+                            </header>
+                        </div>
+                        <!-- End of card Title -->
+                        <!-- Card body -->
+                        <div class="card-body">
+                            <div class="container-fluid">
+                                <div class="row no-gutters">
+                                    <div class="col-sm-4">
+                                        <div class="Names container">
+                                            <h2 class="text-capitalize">qty</h2>
+                                        </div>
+                                        <div class="card-text container Names">
+                                            <ul id="quantity" class="list-group">
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="Names container">
+                                            <h2 class="text-center text-capitalize">operations</h2>
+                                        </div>
+                                        <div id="operationView" class="card-text container Names">
+                                            <!-- <ul class="Operations btn-group-lg">
+                                                <a type="btn" href="#"><i class="fas fa-edit"></i></a>
+                                                <a type="btn" href="#"><i class="fas fa-trash-alt"></i></a>
+                                                <a type="btn" href="#"><i class="fas fa-plus"></i></a>
+                                            </ul> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Card body -->
+                    </div>
+                    <!-- End of card -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Dashboard Section -->
+
+    <!-- Form section -->
+    <section id="form" class="py-5 m-auto">
+        <div class="container bg-secondary">
+            <form class="form-group" role="form">
+
+                <div class="form-group">
+                    <!-- <label for="productName">Name</label> -->
+                    <input type="text" class="form-control" name="productName" placeholder="Product Name">
+                </div>
+
+                <div class="form-group">
+                    <!-- <label for="productDuration">Duration</label> -->
+                    <input type="text" class="form-control" name="productDuration" placeholder="Duration">
+                </div>
+
+                <div class="form-group">
+                    <!-- <label for="productDuration">Price</label> -->
+                    <input type="number" class="form-control" name="productPrice" placeholder="Price">
+                </div>
+
+                <div class="form-group">
+                    <!-- <label for="productDuration">Model</label> -->
+                    <input type="text" class="form-control" name="productModel" placeholder="Model">
+                </div>
+
+                <div class="form-group">
+                    <!-- <label for="productDuration">ISBN</label> -->
+                    <input type="text" class="form-control" name="productISBN" placeholder="ISBN">
+                </div>
+
+                <div class="form-group">
+                    <!-- <label for="productDuration">Url</label> -->
+                    <input type="text" class="form-control" name="productUrl" placeholder="Url">
+                </div>
+
+                <input type="submit" class="form-control btn btn-lg btn-success">
+            </form>
+        </div>
+    </section>
+    <!--End of Form section -->
+
+
+    <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./jquery/jquery-3.3.1.min.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>

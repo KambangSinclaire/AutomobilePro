@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:900|Yesteryear");
+
+body {
+  font-family: "Playfair Display", serif;
+}
+
+#admin {
+  font-family: "Yesteryear", cursive;
+  font-size: 4rem
+}
+
+
+.height {
+  height: 100vh;
+  font-size: 1.5rem;
+  /* border: 1rem solid ; */
+}
+
+
+.iclass {
+  font-size: 2px;
+  padding: 1px;
+}
+
+.Names {
+  border: 1px solid gray;
+  /* border: 0px 0px 1px 1px solid gray; */
+  /* border-bottom: 1px solid gray;
+  border-left: 1px solid gray; */
+}
+
+.heads {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+#searchSection {
+  margin-top: 7rem;
+}
+
+.Operations {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.1rem;
+}
