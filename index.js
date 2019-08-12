@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 app.use(bodyParser.json());
-// app.use(express.static(path.join(__dirname, './admin/admin.html')));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static('admin'));
 app.use('/hci.api', productRoutes);
 app.use('/hci.api', userRoutes);
@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/public/src/views/index.html'));
     /** 
     HMM WHEN I WROTE THIS CODE HERE IT STARTED CAUSING DOWNLOAD OOO
-res.send(express.static('admin'));
+    res.send(express.static('admin'));
     */
 });
 

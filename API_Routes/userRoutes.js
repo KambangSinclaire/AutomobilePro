@@ -45,8 +45,8 @@ UserRouter.post('/user/details', (req, res) => {
 UserRouter.post('/users/registerUser', (req, res) => {
 
     registerUser = {
-        firstname: req.body.firstName,
-        lastname: req.body.lastName,
+        firstname: req.body.firstname,
+        lastname: req.body.lastname,
         email: req.body.email,
         address: req.body.address,
         phone: req.body.phone,
