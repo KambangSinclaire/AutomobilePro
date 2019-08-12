@@ -26,7 +26,7 @@ app.use('/hci.api', userRoutes);
 
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname + '/admin/admin.html'));
+    res.sendFile(path.join(__dirname + '/public/src/views/index.html'));
     /** 
     HMM WHEN I WROTE THIS CODE HERE IT STARTED CAUSING DOWNLOAD OOO
 res.send(express.static('admin'));
