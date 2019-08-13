@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static('admin'));
 app.use('/hci.api', productRoutes);
 app.use('/hci.api', userRoutes);
@@ -26,7 +26,7 @@ app.use('/hci.api', userRoutes);
 
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname + '/public/src/views/index.html'));
+    res.sendFile(path.join(__dirname + '/admin/admin.html'));
     /** 
     HMM WHEN I WROTE THIS CODE HERE IT STARTED CAUSING DOWNLOAD OOO
     res.send(express.static('admin'));
@@ -45,19 +45,6 @@ database.authenticate()
 
     });
 
-
-
-//Connecting to MongoDB database
-// mongoose.connect(`mongodb://192.168.56.1:27017/Products`, {
-//     useNewUrlParser: true
-// }, (error, res) => {
-//     if (error) {
-//         res.json(error)
-//     } else {
-//         console.log("Successfully connected to the Database");
-
-//     }
-// });
 
 
 app.listen(port, () => {
